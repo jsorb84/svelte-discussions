@@ -29,7 +29,7 @@
 	{#each $postsStore as post}
 		<hr />
 		<span>{post.title}</span>
-		<Markdown source="{post.body}" />
+		<Markdown source="{post.body ?? ''}" />
 		<hr />
 	{/each}
 {/if}

@@ -1,31 +1,33 @@
 {
-  "name": "svelte-gitlab",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
-  },
-  "devDependencies": {
-    "@magidoc/plugin-svelte-marked": "^4.1.0",
-    "@octokit/types": "^12.0.0",
-    "@sveltejs/vite-plugin-svelte": "^2.4.2",
-    "@tsconfig/svelte": "^5.0.0",
-    "@types/marked": "^5.0.1",
-    "marked": "^9.0.3",
-    "svelte": "^4.0.5",
-    "svelte-check": "^3.4.6",
-    "tslib": "^2.6.0",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5"
-  },
-  "dependencies": {
-    "@octokit/auth-token": "^4.0.0",
-    "@octokit/rest": "^20.0.2",
-    "svelte-router-spa": "^7.0.1",
-    "vite-plugin-single-spa": "^0.2.0"
-  }
+	"name": "svelte-gitlab",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"deploy": "pnpx gh-pages -d dist"
+	},
+	"devDependencies": {
+		"@magidoc/plugin-svelte-marked": "^4.1.0",
+		"@octokit/types": "^12.0.0",
+		"@sveltejs/vite-plugin-svelte": "^2.4.2",
+		"@tsconfig/svelte": "^5.0.0",
+		"@types/marked": "^5.0.1",
+		"marked": "^9.0.3",
+		"svelte": "^4.0.5",
+		"svelte-check": "^3.4.6",
+		"tslib": "^2.6.0",
+		"typescript": "^5.0.2",
+		"vite": "^4.4.5"
+	},
+	"dependencies": {
+		"@octokit/auth-token": "^4.0.0",
+		"@octokit/rest": "^20.0.2",
+		"gh-pages": "^6.0.0",
+		"svelte-router-spa": "^7.0.1",
+		"vite-plugin-single-spa": "^0.2.0"
+	}
 }
