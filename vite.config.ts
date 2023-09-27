@@ -7,7 +7,7 @@ export default defineConfig({
 	plugins: [
 		svelte(),
 		vitePluginSingleSpa({
-			serverPort: 4101,
+			serverPort: 5173,
 			spaEntryPoint: "./index.html",
 		}),
 	],
